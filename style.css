@@ -2,10 +2,15 @@
 .holder{
     display: flex;
     flex-wrap: wrap;
+    border: solid;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
 }
 
 .item{
     height: 100px;
+    text-align: center;
+    align-content: center;
 }
 
 .item:first-child{
@@ -27,16 +32,19 @@
     order: 3;
     background-color: green;
     flex-basis: calc(100%/3);
+    flex-grow: 2;
 }
 
 .item:nth-child(2){
     order: 2;
     background-color: aqua;
     flex-basis: calc(100%/3);
+    flex-grow: 1;
 }
 
 .item:nth-child(3){
     order: 1;
     background-color: purple;
     flex-basis: calc(100%/3);
+    flex-grow: 2;
 }
